@@ -158,11 +158,34 @@ Opening links in a new tab or window can cause accessibility issues. Here are so
   </div>
 </div>
 
+ <style>
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-box img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.hover img {
+  transition: transform 0.3s ease;
+}
+
+.hover:hover img {
+  transform: scale(1.05);
+}
+</style>
+   
   <div class="col-sm-4">
         <h3>Good Design</h3>
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="hover">
-               <img src="Project5.jpg" class="img-responsive" style="width:125%; display:block; margin:auto;"alt="Image" >
+               <img src="Project5.jpg" class="img-responsive" style="width:100%; display:block; margin:auto;"alt="Image" >
             </div>
           </a>
               <p>An example of good design which I highlighted with explanations of what specifically makes it Good Deisgn.</p>
